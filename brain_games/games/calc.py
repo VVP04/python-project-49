@@ -15,4 +15,7 @@ def get_calc_task():
     random_number2 = random.randint(1, 100)
     random_operator = random.choice(['+', '-', '*'])
     numeric_expression = f'{random_number1} {random_operator} {random_number2}'
-    return (numeric_expression, str(calculate(random_number1, random_number2, random_operator)))
+    return (
+        numeric_expression,
+        str(calculate(random_number1, random_number2, random_operator))
+        )
