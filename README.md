@@ -5,3 +5,5 @@
 ### Asciinema records
 ### brain-even: guess if a random number is even
 [![asciicast](https://asciinema.org/a/Lfjs0PN6Z6jxX7pbRCHY9qp79)]
+### brain-calc: calculate the result of a random expression 
+[![asciicast](https://asciinema.org/a/njE9CR5FKAc6Mno7NrootjwGi)]
