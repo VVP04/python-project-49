@@ -9,8 +9,8 @@ def run_game(task: str, game_func):
 
     score = 0
     while score != 3:
-        random_number, correct_answer = game_func()
-        print(f"Question: {random_number}")
+        compute, correct_answer = game_func()
+        print(f"Question: {compute}")
         user_answer = prompt.string("Your answer: ")
 
         if user_answer == correct_answer:
