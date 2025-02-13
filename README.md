@@ -11,3 +11,5 @@
 [![asciicast](https://asciinema.org/a/FILRocm9D7cO8p2FWCb9PTkjA)]
 ### brain-progression: write down the missing element in arithemtic progression
 [![asciicast](https://asciinema.org/a/5D7BnwJWcVlkIouvhCT3Kpb42)]
+### brain-prime: guess if a random number is prime or not
+[![asciicast](https://asciinema.org/a/uhL2FbNtwJYQzPoBnwFKW4jUt)]
