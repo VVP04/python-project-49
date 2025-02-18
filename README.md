@@ -4,7 +4,7 @@
 
 ### Description
 
-Hexlet Code is a collection of 5 math-related games designed to challenge and improve your arithmetic skills. The games include:
+Brain games is a collection of 5 math-related games designed to challenge and improve your arithmetic skills. The games include:
 
 - Checking if a number is prime
 - Inserting a number into an arithmetic progression
