@@ -1,7 +1,17 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = """
+«Brain Games» is a collection of five console-based games designed to train your brain.
+Each game offers unique challenges to help improve your cognitive skills.
+The games include:
+- Calculator: Solve arithmetic expressions.
+- Progression: Find missing numbers in a sequence.
+- Even Number: Determine if a number is even.
+- Greatest Common Divisor: Find the greatest common divisor of two numbers.
+- Prime Number: Determine if a number is prime.
+After three correct answers, the game is considered completed. An incorrect answer ends the game and prompts you to try again.
+"""
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
