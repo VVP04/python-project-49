@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from brain_games.games.progression import get_progression_task
 from brain_games.user_interaction import run_game
 
