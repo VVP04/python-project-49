@@ -1,28 +1,32 @@
 import prompt
 
+from brain_games.consts import NUMBER_OF_ROUNDS
 
-def run_game(task: str, game_func):
-    print("Welcome to the Brain Games!")
-    username = prompt.string("May I have your name? ")
-    print(f"Hello, {username}")
-    print(task)
 
-    score = 0
-    while score != 3:
-        compute, correct_answer = game_func()
-        print(f"Question: {compute}")
-        user_answer = prompt.string("Your answer: ")
+def run_game(instruction: str, get_question_and_answer):
+    username = prompt.string(
+        "Welcome to the Brain Games!\n"
+        "May I have your name? "
+        )
+    
+    print(
+        f"Hello, {username}!\n"
+        f"{instruction}"
+        )
 
+    for _ in range(NUMBER_OF_ROUNDS):
+        question, correct_answer = get_question_and_answer()
+        user_answer = prompt.string(
+            f"Question: {question}\n"
+            f"Your answer: "
+            )
         if user_answer == correct_answer:
             print("Correct!")
-            score += 1
         else:
-            break
-    if score == 3:
-        print(f"Congratulations, {username}!")
-    else:
-        print(
+            print(
             f"{user_answer} is wrong answer ;(. "
-            f"Correct answer was {correct_answer}."
-        )
-        print(f"Let's try again, {username}!")
+            f"Correct answer was {correct_answer}.\n"
+            f"Let's try again, {username}!"
+            )
+            return
+    print(f'Congratulations, {username}!')
