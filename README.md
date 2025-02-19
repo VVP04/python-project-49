@@ -109,3 +109,9 @@ make lint
 [![asciicast](https://asciinema.org/a/5D7BnwJWcVlkIouvhCT3Kpb42.svg)](https://asciinema.org/a/5D7BnwJWcVlkIouvhCT3Kpb42)
 #### brain-prime: guess if a random number is prime or not
 [![asciicast](https://asciinema.org/a/uhL2FbNtwJYQzPoBnwFKW4jUt.svg)](https://asciinema.org/a/uhL2FbNtwJYQzPoBnwFKW4jUt)
+
+---
+
+### Project team
+
+- [Владимир Плесовских](https://vk.com/id320156902) — Python developer
