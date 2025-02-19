@@ -7,3 +7,5 @@ dist/
 coverage.xml
 *_cache/
 demo.cast
+.python-version
+hello.py
