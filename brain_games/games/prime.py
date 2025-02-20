@@ -1,14 +1,21 @@
-import math
-import random
+from brain_games.consts import PRIME_INSTUCTION
+from brain_games.engine import run_game
+from brain_games.utility import get_random_number
 
 
-def is_prime(num: int) -> str:
-    for divisor in range(2, int(math.sqrt(num) + 1)):
+def is_prime(num: int) -> bool:
+    if num < 2:
+        return False
+    for divisor in range(2, int(num ** 0.5 + 1)):
         if num % divisor == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
 
 
-def get_prime_task():
-    random_number = random.randint(1, 100)
-    return (random_number, is_prime(random_number))
+def get_num_and_prime_check() -> tuple:
+    num = get_random_number()
+    return (num, 'yes' if is_prime(num) else 'no')
+
+
+def run_prime_game():
+    return run_game(PRIME_INSTUCTION, get_num_and_prime_check)
