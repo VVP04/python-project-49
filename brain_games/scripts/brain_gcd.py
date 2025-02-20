@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.consts import GCD_INSTUCTION
-from brain_games.engine import run_game
-from brain_games.games.gcd import get_gcd_task
+from brain_games.games.gcd import run_gcd_game
 
 
 def main():
-    run_game(GCD_INSTUCTION, get_gcd_task)
+    run_gcd_game()
 
 
 if __name__ == '__main__':
