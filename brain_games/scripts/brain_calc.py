@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.consts import CALC_INSTUCTION
-from brain_games.engine import run_game
-from brain_games.games.calc import get_calc_task
+from brain_games.games.calc import run_calc_game
 
 
 def main():
-    run_game(CALC_INSTUCTION, get_calc_task)
+    run_calc_game()
 
 
 if __name__ == '__main__':
