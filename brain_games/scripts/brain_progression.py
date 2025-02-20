@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.consts import PRIME_INSTUCTION
-from brain_games.engine import run_game
-from brain_games.games.progression import get_progression_task
+from brain_games.games.progression import run_progression_game
 
 
 def main():
-    run_game(PRIME_INSTUCTION, get_progression_task)
+    run_progression_game()
 
 
 if __name__ == '__main__':
