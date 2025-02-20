@@ -1,21 +1,17 @@
-import random
+from random import choice
+
+from brain_games.consts import CALC_INSTUCTION, MATH_OPERATORS
+from brain_games.engine import run_game
+from brain_games.utility import get_random_number
 
 
-def calculate(num1: int, num2: int, operation: str) -> int:
-    if operation == '+':
-        return num1 + num2
-    elif operation == '-':
-        return num1 - num2
-    elif operation == '*':
-        return num1 * num2
+def get_numeric_expression_and_result() -> tuple:
+    num1, num2 = get_random_number(), get_random_number()
+    math_operator = choice(MATH_OPERATORS)
+    numeric_expression = f'{num1} {math_operator} {num2}'
+    result = eval(numeric_expression)
+    return (numeric_expression, str(result))
 
 
-def get_calc_task():
-    random_number1 = random.randint(1, 100)
-    random_number2 = random.randint(1, 100)
-    random_operator = random.choice(['+', '-', '*'])
-    numeric_expression = f'{random_number1} {random_operator} {random_number2}'
-    return (
-        numeric_expression,
-        str(calculate(random_number1, random_number2, random_operator))
-        )
+def run_calc_game():
+    return run_game(CALC_INSTUCTION, get_numeric_expression_and_result)
