@@ -1,4 +1,6 @@
-import random
+from brain_games.consts import GCD_INSTUCTION
+from brain_games.engine import run_game
+from brain_games.utility import get_random_number
 
 
 def gcd(num1: int, num2: int) -> int:
@@ -10,11 +12,11 @@ def gcd(num1: int, num2: int) -> int:
     return num2
 
 
-def get_gcd_task():
-    random_number1 = random.randint(1, 100)
-    random_number2 = random.randint(1, 100)
-    pair_for_gcd = f'{random_number1} {random_number2}'
-    return (
-        pair_for_gcd, 
-        str(gcd(random_number1, random_number2))
-        )
+def get_numbers_and_gcd() -> tuple:
+    num1, num2 = get_random_number(), get_random_number()
+    gcd_pair = f"{num1} {num2}"
+    return (gcd_pair, str(gcd(num1, num2)))
+
+
+def run_gcd_game():
+    return run_game(GCD_INSTUCTION, get_numbers_and_gcd)
