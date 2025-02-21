@@ -14,8 +14,8 @@ def get_numeric_expression_and_result() -> tuple:
     ]
     math_operator, operation = choice(operations)
     numeric_expression = f'{num1} {math_operator} {num2}'
-    result = operation(num1, num2)
-    return (numeric_expression, str(result))
+    result = str(operation(num1, num2))
+    return (numeric_expression, result)
 
 
 def run_calc_game():
