@@ -100,11 +100,11 @@ make lint
 
 ### Example Gameplay
 #### brain-even: guess if a random number is even
-[![asciicast](https://asciinema.org/a/Lfjs0PN6Z6jxX7pbRCHY9qp79.svg)](https://asciinema.org/a/Lfjs0PN6Z6jxX7pbRCHY9qp79)
+[![asciicast](https://asciinema.org/a/704708.svg)](https://asciinema.org/a/704708)
 #### brain-calc: calculate the result of a random expression 
-[![asciicast](https://asciinema.org/a/njE9CR5FKAc6Mno7NrootjwGi.svg)](https://asciinema.org/a/njE9CR5FKAc6Mno7NrootjwGi)
+[![asciicast](https://asciinema.org/a/704709.svg)](https://asciinema.org/a/704709)
 #### brain-gcd: calculate the greatest common divisor for two random numbers
-[![asciicast](https://asciinema.org/a/FILRocm9D7cO8p2FWCb9PTkjA.svg)](https://asciinema.org/a/FILRocm9D7cO8p2FWCb9PTkjA)
+[![asciicast](https://asciinema.org/a/704710.svg)](https://asciinema.org/a/704710)
 #### brain-progression: write down the missing element in arithemtic progression
 [![asciicast](https://asciinema.org/a/5D7BnwJWcVlkIouvhCT3Kpb42.svg)](https://asciinema.org/a/5D7BnwJWcVlkIouvhCT3Kpb42)
 #### brain-prime: guess if a random number is prime or not
