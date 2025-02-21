@@ -14,7 +14,8 @@ def is_prime(num: int) -> bool:
 
 def get_num_and_prime_check() -> tuple:
     num = get_random_number()
-    return (num, 'yes' if is_prime(num) else 'no')
+    result = 'yes' if is_prime(num) else 'no'
+    return (num, result)
 
 
 def run_prime_game():
