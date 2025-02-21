@@ -9,7 +9,8 @@ def is_even(num: int) -> bool:
 
 def get_num_and_even_check() -> tuple:
     num = get_random_number()
-    return (num, 'yes' if is_even(num) else 'no')
+    result = 'yes' if is_even(num) else 'no'
+    return (num, result)
 
 
 def run_even_game():
