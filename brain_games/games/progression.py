@@ -7,24 +7,26 @@ from brain_games.engine import run_game
 from brain_games.utility import get_random_number
 
 
-def generate_progression() -> list:
-    progression = []
+def get_progression_and_miss_num():
     start_progression = get_random_number()
     difference = get_random_number(0, 30)
     len_progression = get_random_number(MIN_PROGRESSION_LENGHT, 
                                         MAX_PROGRESSION_LENGHT)
-    for _ in range(len_progression):
-        progression.append(start_progression)
-        start_progression = start_progression + difference
-    return (progression, len_progression)
-
-
-def get_progression_and_miss_num():
-    progression, len_progression = generate_progression()
     random_index = get_random_number(0, len_progression - 1)
-    miss_num = progression[random_index]
-    progression[random_index] = '..'
-    return (' '.join([str(x) for x in progression]), str(miss_num))
+
+    # Генерация прогрессии с пропущенным элементом
+    progression = [
+        str(elem) if index != random_index else '..'
+        for index, elem in enumerate(
+            range(start_progression, 
+                  start_progression + len_progression * difference, 
+                  difference))
+    ]
+
+    # Получение пропущенного числа
+    miss_num = str(start_progression + random_index * difference)
+
+    return (' '.join(progression), miss_num)
 
 
 def run_progression_game():
