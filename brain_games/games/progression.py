@@ -15,18 +15,18 @@ def get_progression_and_miss_num():
     random_index = get_random_number(0, len_progression - 1)
 
     # Генерация прогрессии с пропущенным элементом
-    progression = [
+    progression = ' '.join([
         str(elem) if index != random_index else '..'
         for index, elem in enumerate(
             range(start_progression, 
                   start_progression + len_progression * difference, 
                   difference))
-    ]
+    ])
 
     # Получение пропущенного числа
     miss_num = str(start_progression + random_index * difference)
 
-    return (' '.join(progression), miss_num)
+    return (progression, miss_num)
 
 
 def run_progression_game():
