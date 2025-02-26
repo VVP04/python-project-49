@@ -9,7 +9,7 @@ from brain_games.utility import get_random_number
 
 def get_progression_and_miss_num():
     start_progression = get_random_number()
-    difference = get_random_number(0, 30)
+    difference = get_random_number(1, 30)
     len_progression = get_random_number(MIN_PROGRESSION_LENGHT, 
                                         MAX_PROGRESSION_LENGHT)
     random_index = get_random_number(0, len_progression - 1)
