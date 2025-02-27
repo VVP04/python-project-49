@@ -24,9 +24,9 @@ def get_progression_and_miss_num():
     ])
 
     # Получение пропущенного числа
-    miss_num = str(start_progression + random_index * difference)
+    miss_num = start_progression + random_index * difference
 
-    return (progression, miss_num)
+    return (progression, str(miss_num))
 
 
 def run_progression_game():
